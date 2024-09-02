@@ -816,15 +816,15 @@ footer .tpf > div p {
 	margin-bottom: 1.25rem;
 	text-align: center;
 }
-.who .faq .css-nt424e-MuiPaper-root-MuiAccordion-root {
+.who .faq .faq-list {
 	box-shadow: none;
 }
-.who .faq .css-eqpfi5-MuiAccordionSummary-content {
+.who .faq .title > div:first-child {
 	margin-bottom: 1.5rem;
 	padding: 0 3rem;
 	margin-top: 2rem;
 }
-.who .faq .css-1l3rzzj-MuiTypography-root {
+.who .faq .content {
 	padding: 0 3rem;
 }
 .who .faq > p:last-child {
@@ -1412,5 +1412,8 @@ footer .tpf > div p {
 	}
 	.spend img {
 		max-width: 100%;
+	}
+	.who .faq .title > div:first-child {
+		padding: 0 1rem;
 	}
 }

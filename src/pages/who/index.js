@@ -463,11 +463,13 @@ export default function Who() {
 				<Accordion
 					expanded={expanded === "panel1"}
 					onChange={handleChange("panel1")}
+					className="faq-list"
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
 						aria-controls="panel1bh-content"
 						id="panel1bh-header"
+						className="title"
 					>
 						<Typography
 							sx={{
@@ -480,7 +482,10 @@ export default function Who() {
 						</Typography>
 					</AccordionSummary>
 					<AccordionDetails>
-						<Typography sx={{ color: "#616161" }}>
+						<Typography
+							sx={{ color: "#616161" }}
+							className="content"
+						>
 							Il Banco dei Sospesi mette in relazione chi spende e
 							l’associazione che consegnerà l’opportunità sospesa
 							al beneficiario finale. Per ricevere randomicamente
@@ -493,11 +498,13 @@ export default function Who() {
 				<Accordion
 					expanded={expanded === "panel2"}
 					onChange={handleChange("panel2")}
+					className="faq-list"
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
 						aria-controls="panel2bh-content"
 						id="panel2bh-header"
+						className="title"
 					>
 						<Typography
 							sx={{
@@ -509,7 +516,10 @@ export default function Who() {
 						</Typography>
 					</AccordionSummary>
 					<AccordionDetails>
-						<Typography sx={{ color: "#616161" }}>
+						<Typography
+							sx={{ color: "#616161" }}
+							className="content"
+						>
 							I metodi di pagamento accettati sono quelli
 							accettati da Stripe, tra cui Visa,Mastercard,
 							American Express, Apple Pay, Google Pay e addebito
@@ -521,11 +531,13 @@ export default function Who() {
 				<Accordion
 					expanded={expanded === "panel3"}
 					onChange={handleChange("panel3")}
+					className="faq-list"
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
 						aria-controls="panel3bh-content"
 						id="panel3bh-header"
+						className="title"
 					>
 						<Typography
 							sx={{
@@ -538,7 +550,10 @@ export default function Who() {
 						</Typography>
 					</AccordionSummary>
 					<AccordionDetails>
-						<Typography sx={{ color: "#616161" }}>
+						<Typography
+							sx={{ color: "#616161" }}
+							className="content"
+						>
 							Gli amici del Banco possono registrarsi per
 							permettere a chi spende di acquistare una
 							opportunità che entrerà nel flusso dei sospesi. Se
@@ -549,11 +564,13 @@ export default function Who() {
 				<Accordion
 					expanded={expanded === "panel4"}
 					onChange={handleChange("panel4")}
+					className="faq-list"
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
 						aria-controls="panel4bh-content"
 						id="panel4bh-header"
+						className="title"
 					>
 						<Typography
 							sx={{
@@ -566,7 +583,10 @@ export default function Who() {
 						</Typography>
 					</AccordionSummary>
 					<AccordionDetails>
-						<Typography sx={{ color: "#616161" }}>
+						<Typography
+							sx={{ color: "#616161" }}
+							className="content"
+						>
 							Le donazioni sono completamente anonime, per questo
 							non è possibile conoscere il nome di chi spende o di
 							chi riceve l’opportunità sospesa. Solamente la
