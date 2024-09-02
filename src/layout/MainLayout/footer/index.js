@@ -72,18 +72,10 @@ export default function Footer() {
 					brand identity e comunicazione{" "}
 				</p>
 				<p>
-					<a href="" className="cl-darkGrey link-privacy">
-						Mappa degli stakeholders
-					</a>
+					<a href="">Mappa degli stakeholders</a>
 				</p>
-				<a href="" className="cl-darkGrey link-privacy">
-					Privacy Policy
-				</a>
-				<p>
-					<a href="" className="cl-darkGrey link-privacy">
-						Codice Etico
-					</a>
-				</p>
+				<Link to="/privacy-policy">Privacy Policy</Link>
+				<Link to="/code-ethics">Codice Etico</Link>
 			</div>
 		</>
 	);

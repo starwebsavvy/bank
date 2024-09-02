@@ -12,6 +12,7 @@ import Checkbox from "@mui/material/Checkbox";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import { Link } from "react-router-dom";
 
 const VisuallyHiddenInput = styled("input")({
 	clip: "rect(0 0 0 0)",
@@ -360,14 +361,26 @@ export default function Suspend() {
 					<div className="dflex">
 						<Checkbox size="large" />
 						<p>
-							Dichiaro di aver letto e accettato il Codice Etico
+							Dichiaro di aver letto e accettato il{" "}
+							<Link
+								to="/code-ethics"
+								style={{ color: "rgb(14, 120, 241)" }}
+							>
+								Codice Etico
+							</Link>{" "}
 							del presente sito*
 						</p>
 					</div>
 					<div className="dflex">
 						<Checkbox size="large" />
 						<p>
-							Dichiaro di aver letto e accettato la Privacy Policy
+							Dichiaro di aver letto e accettato la{" "}
+							<Link
+								to="/privacy-policy"
+								style={{ color: "rgb(14, 120, 241)" }}
+							>
+								Privacy Policy
+							</Link>{" "}
 							del presente sito*
 						</p>
 					</div>

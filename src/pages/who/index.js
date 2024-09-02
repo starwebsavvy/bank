@@ -7,6 +7,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Link } from "react-router-dom";
 
 export default function Who() {
 	const [expanded, setExpanded] = React.useState(false);
@@ -594,7 +595,7 @@ export default function Who() {
 						</Typography>
 					</AccordionDetails>
 				</Accordion>
-				<p>Tutte le FAQ</p>
+				<Link to="/all-faq">Tutte le FAQ</Link>
 			</div>
 		</div>
 	);

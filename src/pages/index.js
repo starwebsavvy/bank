@@ -5,3 +5,6 @@ export { default as Activity } from "./activity";
 export { default as Spend } from "./spend";
 export { default as Friend } from "./friend";
 export { default as Contact } from "./contact";
+export { default as Privacy } from "./privacy";
+export { default as Ethics } from "./ethics";
+export { default as Faq } from "./faq";

@@ -1,4 +1,15 @@
-import { Activity, Home, Suspend, Who, Spend, Friend, Contact } from "../pages";
+import {
+	Activity,
+	Home,
+	Suspend,
+	Who,
+	Spend,
+	Friend,
+	Contact,
+	Privacy,
+	Ethics,
+	Faq,
+} from "../pages";
 import MainLayout from "../layout/MainLayout";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
@@ -66,6 +77,33 @@ export default function AppRoutes() {
 					element={
 						<MainLayout>
 							<Contact />
+						</MainLayout>
+					}
+				/>
+				<Route
+					exact
+					path="/privacy-policy"
+					element={
+						<MainLayout>
+							<Privacy />
+						</MainLayout>
+					}
+				/>
+				<Route
+					exact
+					path="/code-ethics"
+					element={
+						<MainLayout>
+							<Ethics />
+						</MainLayout>
+					}
+				/>
+				<Route
+					exact
+					path="/all-faq"
+					element={
+						<MainLayout>
+							<Faq />
 						</MainLayout>
 					}
 				/>

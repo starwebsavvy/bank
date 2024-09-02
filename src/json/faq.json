@@ -1,0 +1,34 @@
+[
+	{
+		"title": "Come faccio a beneficiare del servizio?",
+		"detail": "Il Banco dei sospesi mette in relazione chi spende e chi riceve l’azione. Per le azioni sospese è necessario iscriversi e compilare il form con i propri dati personali. Se vuoi essere scelto per prendere azioni sospese presenti nella nostra bacheca"
+	},
+	{
+		"title": "Quali metodi di pagamento accetta la piattaforma?",
+		"detail": "I metodi di pagamento accettati sono solo Visa e Mastercard."
+	},
+	{
+		"title": "Come faccio ad inserire una nuova azione sospesa nella bacheca?",
+		"detail": "Gli amici del Banco possono registrarsi per permettere a chi spende di acquistare un'azione. Se vuoi diventare amico del Banco dei Sospesi"
+	},
+	{
+		"title": "Posso sapere chi utilizza la mia azione sospesa?",
+		"detail": "Le donazioni sono completamente anonime, per questo non è possibile conoscere il nome di chi spende o di chi riceve l’azione sospesa. Solamente la piattaforma ha la titolarità dei dati."
+	},
+	{
+		"title": "Posso spendere più di un’azione contemporaneamente?",
+		"detail": "Sì, è possibile acquistare più volte la stessa azione sospesa. Ad esempio più biglietti del cinema."
+	},
+	{
+		"title": "Posso rifiutare un’azione sospesa?",
+		"detail": "Sì, chi riceve può rifiutare un sospeso."
+	},
+	{
+		"title": "Come funziona il pagamento dell’azione sospesa?",
+		"detail": "Cliccando su un’azione sospesa è possibile scoprire più nel dettaglio l’esperienza che è possibile acquistare e sospendere. L’acquisto avviene tramite carta di credito e i fondi vengono direttamente trasferiti all’Amico del banco. Una volta che la transazione va a buon fine viene inviata al beneficiario una notifica di ricezione del sospeso ed egli potrà presto usufruire dell’opportunità."
+	},
+	{
+		"title": "Quando avviene la transazione?",
+		"detail": "La transazione avviene nel momento stesso del pagamento."
+	}
+]

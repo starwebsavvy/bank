@@ -827,11 +827,14 @@ footer .tpf > div p {
 .who .faq .content {
 	padding: 0 3rem;
 }
-.who .faq > p:last-child {
+.who .faq > a:last-child {
 	color: #a7a7a7;
 	font-weight: 700;
 	text-align: center;
 	padding: 5rem 0 10rem;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
 }
 .cls-1c {
 	fill: #8fc090;
@@ -1039,6 +1042,53 @@ footer .tpf > div p {
 	box-sizing: border-box;
 	margin-top: 2rem;
 	margin-bottom: 5rem;
+}
+.privacy {
+	padding: 5rem 2rem;
+	width: 1280px;
+	margin: auto;
+}
+.privacy p {
+	margin: 0;
+}
+.privacy a {
+	color: unset;
+}
+.ethics {
+	padding: 5rem 2rem;
+	width: 1280px;
+	margin: auto;
+}
+.ethics p {
+	margin: 0;
+}
+.ethics a {
+	color: unset;
+}
+.allfaq {
+	width: 75%;
+	margin: auto;
+	padding: 4rem 1rem;
+}
+.allfaq h1 {
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 4rem;
+}
+.allfaq .faq-list {
+	box-shadow: none;
+}
+.allfaq .title > div:first-child {
+	margin-bottom: 1.5rem;
+	margin-top: 2rem;
+}
+.allfaq .detail {
+	padding: 0;
+}
+.allfaq .faq-list h3 > div {
+	padding: 0;
 }
 @media screen and (max-width: 768px) {
 	.nav-links {
@@ -1415,5 +1465,21 @@ footer .tpf > div p {
 	}
 	.who .faq .title > div:first-child {
 		padding: 0 1rem;
+	}
+	.privacy {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.ethics {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.allfaq {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.allfaq h1 {
+		font-size: 34px;
+		margin-bottom: 2rem;
 	}
 }
