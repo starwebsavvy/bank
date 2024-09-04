@@ -1,77 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import paths from "../../json/path.json";
+import susbanks from "../../json/bank.json";
 
 export default function Home() {
+	const navigate = useNavigate();
+	const [banks, setBanks] = useState([]);
 	useEffect(() => {
+		setBanks(susbanks);
+
 		AOS.init({
 			duration: 800,
 			once: false,
 			disable: false,
 		});
 	}, []);
-	const susBanks = [
-		{
-			url: "sus-2.png",
-			title: "Pasto delle cucine Fa Bene",
-			status: "Fa bene",
-			ticket: "Pasto cucinato",
-		},
-		{
-			url: "sus-1.png",
-			title: "Materiale scolastico Secondarie I grado",
-			status: "Elca 2000 s.a.s.",
-			ticket: "Materiale di cartoleria",
-		},
-		{
-			url: "sus-1.png",
-			title: "Materiale scolastico scuole primarie",
-			status: "Elca 2000 s.a.s.",
-			ticket: "Materiale di cartoleria",
-		},
-		{
-			url: "sus-3.png",
-			title: "Fa Bene alla dispensa",
-			status: "Fa bene",
-			ticket: "Prodotti a lunga conservazione",
-		},
-		{
-			url: "sus-3.png",
-			title: "Box Zucche Sorprendenti",
-			status: "APS Oltre la corte",
-			ticket: "",
-		},
-		{
-			url: "sus-3.png",
-			title: "Materiale scolastico scuole primarie",
-			status: "Elca 2000 s.a.s.",
-			ticket: "Materiale di cartoleria",
-		},
-		{
-			url: "sus-1.png",
-			title: "Materiale scolastico Secondarie I grado",
-			status: "Elca 2000 s.a.s.",
-			ticket: "Materiale di cartoleria",
-		},
-		{
-			url: "sus-1.png",
-			title: "Materiale scolastico Secondarie I grado",
-			status: "Elca 2000 s.a.s.",
-			ticket: "Materiale di cartoleria",
-		},
-		{
-			url: "sus-2.png",
-			title: "Box Patate Felici e Solidali 2021",
-			status: "APS Oltre la corte",
-		},
-		{
-			url: "sus-2.png",
-			title: "Box frutta e verdura Fa Bene",
-			status: "Fa bene",
-			ticket: "Prodotti freschi",
-		},
-	];
+
+	const goBank = (id) => {
+		navigate(`/bank/${id}`);
+	};
 	return (
 		<div className="home">
 			<div className="detail">
@@ -200,17 +149,21 @@ export default function Home() {
 			<div className="suspend">
 				<p>Il Banco dei Sospesi</p>
 				<div>
-					{susBanks.map((item, index) => (
-						<div className="sus-item" key={index}>
+					{banks.map((item, index) => (
+						<div
+							className="sus-item"
+							key={index}
+							onClick={() => goBank(item.id)}
+						>
 							<div
 								style={{
-									backgroundImage: `url("assets/images/${item.url}")`,
+									backgroundImage: `url("assets/images/${item.img}")`,
 								}}
 							></div>
 							<div>
 								<p className="title">{item.title}</p>
-								<p className="status">{item.status}</p>
-								<p className="ticket">{item.ticket}</p>
+								<p className="status">{item.address1}</p>
+								<p className="ticket">{item.subtitle}</p>
 							</div>
 						</div>
 					))}

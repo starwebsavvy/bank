@@ -9,6 +9,7 @@ import {
 	Privacy,
 	Ethics,
 	Faq,
+	Bank,
 } from "../pages";
 import MainLayout from "../layout/MainLayout";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
@@ -104,6 +105,15 @@ export default function AppRoutes() {
 					element={
 						<MainLayout>
 							<Faq />
+						</MainLayout>
+					}
+				/>
+				<Route
+					exact
+					path="/bank/:id"
+					element={
+						<MainLayout>
+							<Bank />
 						</MainLayout>
 					}
 				/>

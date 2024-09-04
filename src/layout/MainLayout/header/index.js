@@ -11,7 +11,7 @@ export default function Header() {
 	return (
 		<div className="header">
 			<Link to="/" className="logo">
-				<img src="assets/images/logo.svg" alt="Logo" />
+				<img src="/assets/images/logo.svg" alt="Logo" />
 			</Link>
 
 			<div className={`nav-links ${isMenuOpen ? "open" : ""}`}>

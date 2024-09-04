@@ -8,3 +8,4 @@ export { default as Contact } from "./contact";
 export { default as Privacy } from "./privacy";
 export { default as Ethics } from "./ethics";
 export { default as Faq } from "./faq";
+export { default as Bank } from "./bank";
